@@ -226,3 +226,43 @@ git branch --set-upstream branch-name origin/branch-name
 ```
 git rebase
 ```
+
+
+
+创建Tag
+
+```
+git tag <tagname>
+
+git tag -a <tagname> -m "blablabla..."
+
+```
+
+查看标签
+
+```
+git tag
+```
+
+删除标签
+
+```
+git tag -d v0.1
+```
+
+远程上传标签
+
+```
+git push origin v1.0
+```
+
+```
+git push origin v1.0
+```
+
+删除远程标签
+
+```
+git tag -d v0.9
+git push origin :refs/tags/v0.9
+```
