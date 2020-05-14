@@ -1,3 +1,5 @@
+
+
 ## Git学习笔记
 
 参考：廖雪峰Git教程 https://www.liaoxuefeng.com/wiki/896043488029600
@@ -187,4 +189,40 @@ git branch -D <name>  在未合并时强行删除
 
 ```
 git cherry-pick <commitid>
+```
+
+
+
+查看远程库信息
+
+```
+git remote
+```
+
+```
+git remote -v
+```
+
+推送分支
+
+```
+git push origin master
+```
+
+从远程dev分支中拉去dev分支
+
+```
+git checkout -b dev origin/dev
+```
+
+建立本地分支和远程分支的关联
+
+```
+git branch --set-upstream branch-name origin/branch-name
+```
+
+变基
+
+```
+git rebase
 ```
